@@ -44,6 +44,6 @@ function equipWeapon(heroLikeObj) {
 };
 
 document.getElementById('bag').addEventListener('click', function(heroLikeObj) {
-    heroLikeObj.inventory    
+    equipWeapon(hero);   
 })
 
