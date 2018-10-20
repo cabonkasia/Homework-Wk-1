@@ -38,7 +38,9 @@ document.getElementById('dagger').addEventListener('click', function(weaponLikeO
 
 //---Equiping weapon---//
 function equipWeapon(heroLikeObj) {
-    heroLikeObj.inventory.unshift(heroLikeObj.weapon)
+    if(heroLikeObj.inventory.length === 0) {
+    } else {
+    heroLikeObj.weapon = heroLikeObj.inventory[0];}
 };
 
 document.getElementById('bag').addEventListener('click', function(heroLikeObj) {
