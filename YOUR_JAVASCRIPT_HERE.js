@@ -22,15 +22,10 @@ document.getElementById('inn').addEventListener('click', function() {
 })
 
 //---Picking up items---//
-///////////////////////
 function pickUpItem(heroLikeObj, obj) {
-    // obj = {};
-    // heroLikeObj.inventory.push(obj);
-    // console.log('hellooo')
+    //console.log(heroLikeObj);
+    heroLikeObj.inventory.push(obj);
 };
-
-// weapon = {};
-// pickUpItem(hero, weapon)
 
 
 document.getElementById('dagger').addEventListener('click', function(weaponLikeObj) {
@@ -38,7 +33,7 @@ document.getElementById('dagger').addEventListener('click', function(weaponLikeO
         type: 'dagger',
         damage: 2
     }
-    hero.inventory.push(weaponLikeObj)
+    hero.inventory.push(weaponLikeObj);
 })
 
 //---Equiping weapon---//
@@ -49,3 +44,4 @@ function equipWeapon(heroLikeObj) {
 document.getElementById('bag').addEventListener('click', function(heroLikeObj) {
     heroLikeObj.inventory    
 })
+
