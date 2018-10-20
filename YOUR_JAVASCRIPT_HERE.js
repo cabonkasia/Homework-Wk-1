@@ -23,7 +23,6 @@ document.getElementById('inn').addEventListener('click', function() {
 
 //---Picking up items---//
 function pickUpItem(heroLikeObj, obj) {
-    //console.log(heroLikeObj);
     heroLikeObj.inventory.push(obj);
 };
 
@@ -61,19 +60,21 @@ document.getElementById('bag').addEventListener('click', function(heroLikeObj) {
    } 
 
  
-
  //---change name function---//
 
+ 
  function changeName (heroLikeObj) {
-        let input = document.querySelector('input');
-        console.log('changeName function works')
-        document.getElementById('submitBtn').addEventListener('click', function() {
-            heroLikeObj.name = input;
+        let input = document.querySelector('#inputField');
+             document.getElementById('submitBtn').addEventListener('click', function() {
+             let newName = input.value;
+             console.log(newName);
+             heroLikeObj.name = newName;
+             displayStats(heroLikeObj);
         });
-        
+               
  };
-
+ 
  changeName(hero);
-
+ 
  //---the end---//
  displayStats(hero);
