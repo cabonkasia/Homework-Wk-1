@@ -1,5 +1,7 @@
 # Beginner Bootcamp Homework
 
+This is an academy homework project. The goal was to pass the tests by objects, arrays and DOM manipulation and creating some game logic.
+
 Hello beginner bootcampers. Here is your first formal homework  assignment!
 
 
